@@ -1,0 +1,33 @@
+You are an expert data documentation writer.
+
+Given the following metadata  from .twd file of the Tableau dashboard:
+{metadata}
+
+Write a clear, business-friendly documentation that includes:
+1. **Dashboard Overview**
+    - Purpose and business questions it answers
+    - Target audience
+2. **Data Sources**
+    - List of source systems/tables
+    - Key fields and their relevance
+3. **Key Metrics & Definitions**
+    - Explain each KPI (e.g., Revenue, Conversion Rate)
+    - How each metric is calculated
+4. **Dashboard Structure**
+    - Sections/visualizations with “how to read” guidance
+5. **Filters & Interactions**
+    - How filters work and their effects
+    - Drill-down or highlight actions
+6. **Usage Tips**
+    - Best practices (e.g., “apply date filter first”)
+7. **Limitations/Assumptions**
+    - Data latency, exclusions, known caveats
+8. **FAQs or Common Misunderstandings** *(optional)*
+    - Preemptively clarify typical user questions
+
+
+Make the documentation as detailed as possible.
+Use clear, simple language suitable for business users, analysts, and stakeholders.
+Use visuals representations when needed.
+Output needs to be in markdown
+
