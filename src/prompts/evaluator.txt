@@ -1,0 +1,44 @@
+You are an expert technical writer and dashboard documentation evaluator.
+
+Evaluate the following Markdown documentation:
+---
+{documentation}
+---
+
+Metadata used to generate the documentation:
+---
+{metadata}
+---
+
+Evaluate it against the following criteria:
+1. Does it include all necessary sections: Overview, Purpose, Business Questions, Audience, Data Sources?
+2. Are the explanations clear, free of jargon, and business-friendly?
+3. Are there any hallucinated facts or incorrect metrics/definitions?
+4. Are examples or visuals mentioned when appropriate?
+5. Are known assumptions or limitations present?
+
+If any of these are missing or poorly written, regenerate a corrected version. Output the improved Markdown only, without commentary.
+
+Expected documentation Structure:
+---
+1. **Dashboard Overview**
+    - Purpose and business questions it answers
+    - Target audience
+2. **Data Sources**
+    - List of source systems/tables
+    - Key fields and their relevance
+3. **Key Metrics & Definitions**
+    - Explain each KPI (e.g., Revenue, Conversion Rate)
+    - How each metric is calculated
+4. **Dashboard Structure**
+    - Sections/visualizations with “how to read” guidance
+5. **Filters & Interactions**
+    - How filters work and their effects
+    - Drill-down or highlight actions
+6. **Usage Tips**
+    - Best practices (e.g., “apply date filter first”)
+7. **Limitations/Assumptions**
+    - Data latency, exclusions, known caveats
+8. **FAQs or Common Misunderstandings** *(optional)*
+    - Preemptively clarify typical user questions
+---

@@ -31,6 +31,17 @@ class TableauTWBXExtractor:
 
         return self._parse_twb_metadata()
 
+    def cleanup(self):
+        if os.path.exists(self.extract_dir):
+            logger.info(f"Cleaning up extracted directory: {self.extract_dir}")
+            for root, dirs, files in os.walk(self.extract_dir, topdown=False):
+                for name in files:
+                    os.remove(os.path.join(root, name))
+                for name in dirs:
+                    os.rmdir(os.path.join(root, name))
+            os.rmdir(self.extract_dir)
+
+    
     def _parse_twb_metadata(self):
         workbook = self.xml_data.get("workbook", {})
         metadata = workbook
