@@ -18,7 +18,7 @@ class Evaluator:
         logger.info("Loading prompt template for documentation generation.")
         prompt_template = PromptTemplate(
             input_variables=["metadata"],
-            template=open("src/prompts/evaluator.txt").read()
+            template=open("src/prompts/evaluator_v2.txt").read()
         )
         self.chain  = prompt_template | self.llm | StrOutputParser()
 
